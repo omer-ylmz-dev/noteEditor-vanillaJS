@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>Note Editor</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<nav class="navbar">
+	<div class="brand">
+		Note Editor
+	</div>
+	<div class="search">
+		<input type="text" placeholder="Search" id="searchBar" />
+	</div>
+	<a name="editNote"></a>
+</nav>
+<div class="test">Write a Note</div>
+<section class="noteEditorContainer">
+	<div class="noteEditor">
+		<input type="text" placeholder="Title" id="title" name="title" onchange="addTitle()" />
+		<textarea placeholder="Note" id="note" name="note" onchange="addNote()"></textarea>
+		<button type="button" id="save">Save</button>
+		<input type="hidden" value="-1" id="noteIndexNumber" />
+	</div>
+</section>
+<div class="test">Notes</div>
+<div id="emptyDB">There is no saved notes</div>
+<section class="savedNotes" id="savedNotes">
+	
+
+</section>
+<footer class="footer">
+	developed by omer-ylmz-dev - 2024
+	<a name="searchResults"></a>
+</footer>
+</body>
+<script src="script.js"></script>
+</html>
